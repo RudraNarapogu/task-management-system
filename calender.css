@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#f4dbfb, #d8dbfe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background: #f4dbfb;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #f4dbfb;
+    border-radius: 10px;
+    border: 3px solid #fff;
+  }
+  
+  .full {
+    font-variation-settings:
+        'FILL'1,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+  }
+  
+  /* container start */
+  .container {
+    position: relative;
+    width: 95%;
+    height: 95vh;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1),
+        0 0 10px rgba(0, 0, 0, .2),
+        0 0 15px rgba(0, 0, 0, .2);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+  }
+  
+  /* left start */
+  .container .left {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.5) 35px 35px 68px 0px,
+        inset rgba(255, 255, 255, 0.6) -8px -8px 16px 0px,
+        inset rgb(255, 255, 255) 0px 11px 28px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  /* header start */
+  .container .left header {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* logo start */
+  .container .left header .logo {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container .left header .logo h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .container .left header .logo .close {
+    position: relative;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  /* nav start */
+  .container .left header nav {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  .container .left header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .container .left header nav ul li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .left header nav ul li a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .3s ease;
+  }
+  
+  .container .left header nav ul li:nth-child(3) a,
+  .container .left header nav ul li a:hover {
+    transition: 0s;
+    background: #f1f3ff;
+  }
+  
+  .container .left header nav ul li a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #6577ff;
+    transition: .3s ease;
+  }
+  .container .left header nav ul li:nth-child(3) a::before,
+  .container .left header nav ul li a:hover::before {
+    width: 4px;
+  }
+  
+  .container .left header nav ul li a .material-symbols-outlined {
+    color: #999;
+    font-size: 1.7em;
+    margin-right: 10px;
+  }
+  
+  .container .left header nav ul li a .title {
+    color: #999;
+    font-size: 1.1em;
+  }
+  
+  .container .left header nav ul li:nth-child(3) a .material-symbols-outlined,
+  .container .left header nav ul li:nth-child(3) a .title,
+  .container .left header nav ul li a:hover .material-symbols-outlined,
+  .container .left header nav ul li a:hover .title {
+    color: #6577ff;
+  }
+  .container .right {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* top start */
+  .container .right .top {
+    position: center;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+  }
+  .container .right .top .h2 {
+    color: #000;
+    font-size: 1.4em;
+    cursor: pointer;
+    text-align: center;
+}
+.rectangle-box {
+  position: absolute;
+  top:120px;
+  left: 900px;
+  width: 330px;
+  height:400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.wrapper{
+  position: absolute;
+  top:120px;
+  left:250px;
+  width:600px;
+  height:470px;
+  padding:20px;
+  background-color:#ffffff ;
+  box-sizing: border-box;
+  margin-bottom:20px ;
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 20px;
+  width: 20px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+.rectangle-box2 {
+    position:absolute;
+    top:530px;
+    left: 900px;
+  width: 330px;
+    height:80px;
+    padding:20px;
+    background-color:#ffffff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius:20px;
+   /* Set the desired height or use a specific unit like 'vh' for viewport height */
+}
+
+.container .rectangle-box2 ul{
+  position:relative;
+  display:flex;
+  top: 2px;
+  flex-direction: row;
+  gap:80px;
+ 
+  align-items: center;
+}
+.container .rectangle-box2 ul li  {
+ text-align: center;
+list-style: none;
+}
+.container .rectangle-box2 ul li a{
+  text-decoration:none;
+  font-size:0.75em;
+
+}
+.container .rectangle-box2 ul li a .material-symbols-outlined {
+font-size: 1em;
+  margin-right: 5px;
+  justify-content: center;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 24
+   
+}
+.container .rectangle-box2 ul li:nth-child(2) a,
+  .container .left header nav ul li a:hover {
+    transition: 0s;
+    color: #c240fa;
+  }
+.container .rectangle-box2 ul li:nth-child(3) a,
+  .container .left header nav ul li a:hover {
+    transition: 0s;
+    color: #e6b1fd;
+  }
+
+.container .rectangle-box2 ul li a .title {
+  color: #070707;
+  
+}
